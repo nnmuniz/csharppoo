@@ -10,8 +10,11 @@ namespace _07_ByteBank
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente();
+            ContaCorrente conta = new ContaCorrente(867, 86712540);
             Cliente cliente = new Cliente();
+
+            Console.WriteLine(conta.Agencia);
+            Console.WriteLine(conta.Numero);
 
             cliente.Nome = "Nathalya";
             cliente.CPF = "438.218.154-05";
@@ -22,6 +25,11 @@ namespace _07_ByteBank
 
             Console.WriteLine(conta.Titular.Nome);
             Console.WriteLine(conta.Saldo);
+
+            ContaCorrente contaAtualizada = new ContaCorrente(868, 86712540);
+
+            Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
             Console.ReadLine();
         }
     }

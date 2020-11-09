@@ -1,5 +1,4 @@
-﻿using _06_ByteBank;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +11,7 @@ namespace _06_ByteBank
         public Cliente titular;
         public int agencia;
         public int numero ;
-        private double saldo = 100; // Encapsulamento o campo saldo não fica exposto ele fica reservado / privado e a manipulação é feita atraves dos métodos DefinirSaldo (set) ObterSaldo (Get).
+        private double saldo = 100;
 
         public void SetSaldo(double saldo)
         {
